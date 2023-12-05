@@ -259,6 +259,17 @@ section:nth-child(odd){
     width: 25%;
 }
 
+.zero-percent{
+    height: inherit;
+    width: 0%;
+}
+
+.hundred-percent{
+    height: inherit;
+    width: 100%;
+}
+
+
 
 
 
@@ -309,12 +320,48 @@ section:nth-child(odd){
     text-align: center;
     font-size: large;
     /* padding: 10px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-name{
+    text-decoration: none;
+    color: transparent;
+    padding: 10px;
+}
+
+.project-name:visited{
+    color: transparent;
+}
+
+.github-link{
+    /* position: absolute;
+    top: 90%; */
+    /* left: 0%; */
+    align-self: center;
+    color: transparent;
+    padding: 5px;
+    padding-bottom: 10px;
 }
 
 .project:hover .project-details{
     color: white;
-    background-color: #80808078;;
+    background-color: #1a181878;
 }
+
+.project:hover .project-name{
+    color: white;
+}
+
+.project:hover .github-link{
+    color: white;
+}
+
+
+
+
 
 
 
